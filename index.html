@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part Release Details | Fed PR Lender Portal</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <a href="#" class="sidebar-item">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <span>Disbursement</span>
+        </a>
+        <a href="#" class="sidebar-item">
+            <i class="fa-solid fa-unlock-keyhole"></i>
+            <span>Release</span>
+        </a>
+        <a href="#" class="sidebar-item active">
+            <i class="fa-solid fa-scissors"></i>
+            <span>Part Release</span>
+        </a>
+        <a href="#" class="sidebar-item">
+            <i class="fa-solid fa-rotate-left"></i>
+            <span>Repledge</span>
+        </a>
+        <a href="#" class="sidebar-item">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Search</span>
+        </a>
+        <a href="#" class="sidebar-item">
+            <i class="fa-solid fa-bell"></i>
+            <span>Notifications</span>
+        </a>
+        <a href="#" class="sidebar-item">
+            <i class="fa-solid fa-id-card"></i>
+            <span>KYC Search</span>
+        </a>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="header">
+            <div class="header-left">
+                <img src="rupeek_logo.png" alt="Rupeek">
+                <img src="federal_logo.png" alt="Federal Bank">
+            </div>
+            <div class="header-right">
+                <button class="view-tickets-btn">View Tickets</button>
+                <div class="helpline">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>Helpline Number:</span>
+                </div>
+                <div class="notification-icon">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="notif-badge">9</span>
+                </div>
+                <div class="user-profile">
+                    <span class="user-name">federal manager</span>
+                    <div class="user-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-body">
+            <h1 class="page-title">Part Release Details</h1>
+
+            <div class="stepper-container">
+                <div class="stepper-header">
+                    <div class="step-item active" id="step-tab-1">
+                        <span class="step-number">1</span>
+                        <span class="step-label">OTP Verification</span>
+                    </div>
+                    <div class="step-item" id="step-tab-2">
+                        <span class="step-number">2</span>
+                        <span class="step-label">Agent Details</span>
+                    </div>
+                    <div class="step-item" id="step-tab-3">
+                        <span class="step-number">3</span>
+                        <span class="step-label">Customer KYC Details</span>
+                    </div>
+                    <div class="step-item" id="step-tab-4">
+                        <span class="step-number">4</span>
+                        <span class="step-label">Gold Jewels Details</span>
+                    </div>
+                </div>
+
+                <!-- Step 1: Authentication -->
+                <div class="step-content active" id="content-step-1">
+                    <div class="auth-container">
+                        <!-- Verify LM Group -->
+                        <div class="otp-group">
+                            <span class="otp-label">Verify LM</span>
+                            <div class="otp-inputs" id="lm-otp">
+                                <input type="text" class="otp-input" maxlength="1">
+                                <input type="text" class="otp-input" maxlength="1">
+                                <input type="text" class="otp-input" maxlength="1">
+                                <input type="text" class="otp-input" maxlength="1">
+                            </div>
+                            <div class="otp-sub-actions">
+                                <span class="resend-link resend-btn">Resend OTP?</span>
+                                <span class="call-link">Call over OTP</span>
+                            </div>
+                            <button class="verify-submit-btn">Verify</button>
+                        </div>
+
+                        <!-- Verify Customer Group -->
+                        <div class="otp-group">
+                            <span class="otp-label">Verify Customer</span>
+                            <div class="otp-inputs" id="cx-otp">
+                                <input type="text" class="otp-input" maxlength="1">
+                                <input type="text" class="otp-input" maxlength="1">
+                                <input type="text" class="otp-input" maxlength="1">
+                                <input type="text" class="otp-input" maxlength="1">
+                            </div>
+                            <div class="otp-sub-actions">
+                                <span class="resend-link resend-btn">Resend OTP?</span>
+                                <span class="call-link">Call over OTP</span>
+                            </div>
+                            <button class="verify-submit-btn">Verify</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Agent Details (Same as before) -->
+                <div class="step-content" id="content-step-2">
+                    <div class="agent-details-grid">
+                        <div class="agent-photo-container">
+                            <img src="agent_profile.png" alt="Sally Wisoky" class="agent-photo">
+                        </div>
+                        <div class="details-table">
+                            <div class="detail-row">
+                                <span class="detail-label">Name</span>
+                                <span class="detail-value">Sally Wisoky</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">PAN Details</span>
+                                <span class="detail-link">bpkpa1929p</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Rupeek ID</span>
+                                <span class="detail-value">0089</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Aadhar Details</span>
+                                <span class="detail-link">987654567898</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Agent Status</span>
+                                <span class="detail-value">Agent hasn't started for the branch yet</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Customer KYC -->
+                <div class="step-content" id="content-step-3">
+                    <div class="kyc-grid">
+                        <div class="kyc-photos">
+                            <div class="kyc-photo-box">
+                                <span>Customer's Live Photo</span>
+                                <img src="cx_live.png" alt="Live Photo">
+                            </div>
+                            <div class="kyc-photo-box">
+                                <span>Customer's PAN Picture</span>
+                                <img src="pan_card.png" alt="PAN Card">
+                            </div>
+                        </div>
+                        <div class="kyc-info-table">
+                            <span class="detail-label">Customer Name (Aadhar)</span>
+                            <span class="detail-value">ARUN KUMAR</span>
+                            <span class="detail-label">Masked Aadhar Number</span>
+                            <span class="detail-value">XXXX XXXX 1234</span>
+                            <span class="detail-label">Address (Aadhar Card)</span>
+                            <span class="detail-value">123, Green Park, South Avenue, Chennai - 600001</span>
+                            <span class="detail-label">Local Address</span>
+                            <span class="detail-value">456, Marina Beach Road, Chennai - 600004</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Gold Jewels Details -->
+                <div class="step-content" id="content-step-4">
+                    <!-- Top Row: Details & Actions -->
+                    <div class="jewel-details-header-row">
+                        <div class="info-card">
+                            <div class="info-card-header">Customer Details</div>
+                            <div class="info-card-body">
+                                <div class="info-row"><span class="label">Name</span><span class="value">Arun</span>
+                                </div>
+                                <div class="info-row"><span class="label">Mobile</span><span
+                                        class="value">9500501776</span></div>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-card-header">PR Details</div>
+                            <div class="info-card-body">
+                                <div class="info-row"><span class="label">Order Date</span><span
+                                        class="value">27/10/2023</span></div>
+                                <div class="info-row"><span class="label">Loan ID</span><span
+                                        class="value">1045126709965</span></div>
+                            </div>
+                        </div>
+                        <div class="action-metrics-group">
+                            <button class="download-primary-btn"><i class="fa-solid fa-download"></i> Download</button>
+                            <div class="metrics-card">
+                                <div class="metrics-card-header">Current Loan Details</div>
+                                <div class="metrics-list">
+                                    <div class="met-item-row"><span class="met-label">Gross Weight </span><span
+                                            class="met-value">45.50g</span></div>
+                                    <div class="met-item-row"><span class="met-label">Net Weight </span><span
+                                            class="met-value">42.20g</span></div>
+                                    <div class="met-item-row"><span class="met-label">Deductions </span><span
+                                            class="met-value">3.30g</span></div>
+                                    <div class="met-item-row"><span class="met-label">Total Quantity </span><span
+                                            class="met-value">5</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gold-jewels-appraisal-layout">
+                        <!-- Left: Main Tables -->
+                        <div class="jewel-main-tables">
+                            <div class="jewel-tables-container">
+                                <section class="table-section">
+                                    <div class="table-header-orange">Part Release Jewel Details</div>
+                                    <table class="data-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Jewel Name (Central)</th>
+                                                <th>Image</th>
+                                                <th>GW</th>
+                                                <th>Quantity</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Gold Bangle</td>
+                                                <td><span class="view-link"><i class="fa-solid fa-image"></i>
+                                                        View</span></td>
+                                                <td>15.20</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gold Chain</td>
+                                                <td><span class="view-link"><i class="fa-solid fa-image"></i>
+                                                        View</span></td>
+                                                <td>10.00</td>
+                                                <td>1</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </section>
+
+                                <section class="table-section">
+                                    <div class="table-header-orange">Part Release Order Summary</div>
+                                    <table class="data-table summary-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Jewel Name (Central)</th>
+                                                <th>Total Quantity</th>
+                                                <th>Total GW</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Released Jewels</td>
+                                                <td>2</td>
+                                                <td>25.20g</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </section>
+
+                                <section class="table-section">
+                                    <div class="table-header-orange">Remaining Jewel Details</div>
+                                    <table class="data-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Jewel Name (Central)</th>
+                                                <th>Image</th>
+                                                <th>GW</th>
+                                                <th>Quantity</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Gold Ring</td>
+                                                <td><span class="view-link"><i class="fa-solid fa-image"></i>
+                                                        View</span></td>
+                                                <td>20.30</td>
+                                                <td>3</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </section>
+
+                                <section class="table-section">
+                                    <div class="table-header-orange">Remaining Jewels Summary</div>
+                                    <table class="data-table summary-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Jewel Name (Central)</th>
+                                                <th>Total Quantity</th>
+                                                <th>Total GW</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Retained Jewels</td>
+                                                <td>3</td>
+                                                <td>20.30g</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </section>
+                            </div>
+                        </div>
+
+                        <!-- Right: Appraisal Sheet -->
+                        <aside class="appraisal-sheet-side">
+                            <span class="appraisal-label">Appraisal Sheet(GLC)</span>
+                            <div class="appraisal-frame">
+                                <a href="appraisal_sheet.png" target="_blank" download="appraisal_sheet.png"
+                                    title="Click to view or download">
+                                    <img src="appraisal_sheet.png" alt="Appraisal Sheet">
+                                </a>
+                            </div>
+                        </aside>
+                    </div>
+
+                </div>
+
+                <!-- Footer Nav -->
+                <div class="stepper-footer" id="main-footer">
+                    <div class="footer-left-stack">
+                        <button class="btn btn-red" id="request-cancel-trigger" style="display: none;">Request
+                            cancellation</button>
+                        <button class="btn btn-back" id="prev-btn">Back</button>
+                    </div>
+                    <button class="btn btn-orange" id="next-btn">Next</button>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="cancel-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Reason for Cancellation</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <select class="custom-select">
+                    <option selected disabled>Please select an option</option>
+                    <option>Another loan is NPA</option>
+                    <option>Customer is blacklisted</option>
+                    <option>Sufficient payment not received</option>
+                    <option>Others</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
