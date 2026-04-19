@@ -4,7 +4,7 @@ A professional, high-fidelity web application for managing Part Release details 
 
 ## 🚀 Live Demo
 You can view the live interactive prototype here:
-**[View Live Website](https://ritiksahoo.github.io/fed-pr-lender-portal/)**
+**[View Live Website](https://ritiksahoo.github.io/Fed-PR-Lender-Portal/)**
 *(Note: Please ensure GitHub Pages is enabled in your repository settings to make this link work.)*
 
 ## 🛠 Features
