@@ -567,7 +567,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px 10px 15px; /* Increased right padding for better spacing */
+    padding: 10px 20px; /* Standardized padding */
     border-bottom: 1px solid #f0f0f0;
 }
 
@@ -590,13 +590,14 @@ body {
 
 .gold-jewels-appraisal-layout {
     display: grid;
-    grid-template-columns: 72% 28%;
-    gap: 25px;
+    grid-template-columns: 1fr 340px; /* Fixed sidebar width prevents clipping of metrics */
+    gap: 30px;
     margin-top: 0;
+    align-items: start;
 }
 
 .jewel-main-tables {
-    flex-grow: 1;
+    min-width: 0; /* Allows tables to handle overflow internally without pushing sidebar */
 }
 
 .appraisal-sheet-side {
