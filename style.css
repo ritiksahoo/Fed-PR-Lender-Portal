@@ -589,8 +589,9 @@ body {
 }
 
 .gold-jewels-appraisal-layout {
-    display: flex;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: 70% calc(30% - 30px);
+    gap: 30px;
     margin-top: 0;
 }
 
@@ -599,9 +600,9 @@ body {
 }
 
 .appraisal-sheet-side {
-    width: 250px;
+    width: 100%;
     flex-shrink: 0;
-    margin-top: 15px; /* Add space below metrics card */
+    margin-top: 5px; /* Reduced margin to keep closer to metrics */
 }
 
 .appraisal-label {
