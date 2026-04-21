@@ -590,7 +590,7 @@ body {
 
 .gold-jewels-appraisal-layout {
     display: grid;
-    grid-template-columns: 1fr 340px; /* Fixed sidebar width prevents clipping of metrics */
+    grid-template-columns: 1fr 400px; /* Increased width to prevent clipping */
     gap: 30px;
     margin-top: 0;
     align-items: start;
